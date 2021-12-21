@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang='en' dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+        <header class="header">
+          <h1 id="title" class="text-center">Survey form</h1>
+          <p id="description" class="description text-center">Thank you, this form help us improve the plataform</p>
+        </header>
+
+        <form id="survey-form">
+          <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+            <input id="name" type="text" name="name" class="form-control" placeholder="Your name here" required>
+          </div>
+          <div class="form-group">
+            <label id="email-label" for="email">E-mail</label>
+            <input id="email" name="email" class="form-control" type="email" placeholder="Your e-mail here" required>
+          </div>
+          <div class="form-group">
+            <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+            <input id="number" name="age" type="number" min="10" max="99" class="form-control" placeholder="Age">
+          </div>
+          <div class="form-group">
+            <p>Which option best describes your current role?</p>
+            <select id="dropdown" name="role" class="form-control" required>
+              <option disable selected value> Select current role</option>
+              <option value="student">Student</option>
+              <option value="job">Full Time Job</option>
+              <option value="learner">Full Time Learner</option>
+              <option value="preferNo">Prefer not to say</option>
+              <option value="other">Other</option>
+            </select>
+            <div class="form-group">
+              <p>Would you recommend us to a friend?</p>
+              <label>
+                <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked>Definitely
+              </label>
+              <label>
+                <input name="user-recommend" value="maybe" type="radio" class="input-radio">Maybe
+              </label>
+              <label>
+                <input name="user-recommend" value="not-sure" type="radio" class="input-radio">Not sure
+              </label>
+            </div>
+            <div class="form-group">
+              <p>What is your prefered time at work?</p>
+              <select id="most-like" name="most-like" class="form-control" required>
+                <option disabled selected value>Select an option</option>
+                <option value="morning">Morning</option>
+                <option value="lunchtime">Lunch time</option>
+                <option value="leave">Get back to house</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <p>What would you like to see improved?<span class="clue">(Check all that apply)</span></p>
+              <label><input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox"/>Front-end Projects</label>
+              <label><input name="prefer" value="back-end-projects" type="checkbox" class="input-checkbox"/>Back-end Projects</label>
+              <label><input name="prefer" value="data-visualization" type="checkbox" class="input-checkbox"/>Data visualization</label>
+              <label><input name="prefer" value="challenges" type="checkbox" class="input-checkbox"/>Challenges</label>
+            </div>
+            <div class="form-group">
+              <p>Any comments or suggestions?</p>
+              <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comments here..."></textarea>
+            </div>
+            <div class="form-group">
+              <button type="submit" id="submit" class="submit-button">Submit</button>
+            </div>
+        </form>
+      </div>
+      <footer>
+        Build by <a href="https://www.sinap.live" target="_blank">sinap.live</a>
+      </footer>
+  </body>
+</html>
